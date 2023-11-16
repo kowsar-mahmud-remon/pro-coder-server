@@ -1,5 +1,7 @@
 import express from 'express';
+import validateRequest from '../../middlewares/validateRequest';
 import { CourseCatalogController } from './courseCatalog.controller';
+import { CourseCatalogValidation } from './courseCatalog.validation';
 const router = express.Router();
 
 router.get(
@@ -16,6 +18,8 @@ router.get(
 
 router.post(
   '/create-courseCatalog',
+  validateRequest(CourseCatalogValidation.createCourseCatalogZodSchema),
+
   CourseCatalogController.createCourseCatalog
 );
 
