@@ -27,4 +27,4 @@ router.delete('/:id', CourseCatalogController.deleteCourseCatalog);
 
 router.patch('/:id', CourseCatalogController.updateCourseCatalog);
 
-export const BlogRoutes = router;
+export const CourseCatalogRoutes = router;

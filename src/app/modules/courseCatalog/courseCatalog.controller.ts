@@ -72,7 +72,7 @@ const updateCourseCatalog = catchAsync(async (req: Request, res: Response) => {
   sendResponse<ICourseCatalog>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Blog updated successfully !',
+    message: 'CourseCatalog updated successfully !',
     data: updatedCourseCatalog,
   });
 });
