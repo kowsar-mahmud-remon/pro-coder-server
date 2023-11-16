@@ -9,7 +9,23 @@ const CourseCatalogSchema = new Schema<ICourseCatalog>(
       type: String,
       required: true,
     },
+    title: {
+      type: String,
+      required: true,
+    },
     imgUrl: {
+      type: String,
+      required: true,
+    },
+    course_price: {
+      type: Number,
+      required: true,
+    },
+    rating: {
+      type: Number,
+      required: true,
+    },
+    details: {
       type: String,
       required: true,
     },
